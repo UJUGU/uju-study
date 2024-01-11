@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스터디</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="./todolist/todolist.js"></script>
+
 </head>
 <style>
     body {
@@ -13,6 +15,7 @@
     }
 </style>
 <body>
+
     <div class="title is-1 js-clock">
         <h1 class="js-title">00:00</h1>
     </div>
@@ -23,12 +26,11 @@
             <hr>
             <div class="columns is-1-mobile">
                 <input class="input is-success"  type="text" id="item" placeholder="할일을 입력하세요...">
-                <button class="button is-success" type="button" onclick="addItem()">할일 추가</button> 
+                <button class="button is-success" type="button" onclick="addItem();">할일 추가</button> 
             </div>
             <hr>
-            <ul id="todolist">
-                <li>test li</li>
-            </ul>
+            <ul id="todolist" class="is-flex is-flex-direction-column"></ul>
         </div>
+
 </body>
 </html>
